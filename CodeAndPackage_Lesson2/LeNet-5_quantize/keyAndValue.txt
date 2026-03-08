@@ -1,0 +1,82 @@
+key=c1, value=QConv2d(
+  1, 6, kernel_size=(5, 5), stride=(1, 1)
+  (act_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+  (weight_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+  (bias_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+)
+key=c2, value=QConv2d(
+  6, 16, kernel_size=(5, 5), stride=(1, 1)
+  (act_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+  (weight_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+  (bias_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+)
+key=c2, value=QConv2d(
+  6, 16, kernel_size=(5, 5), stride=(1, 1)
+  (act_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+  (weight_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+  (bias_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+)
+key=c3, value=QConv2d(
+  16, 120, kernel_size=(5, 5), stride=(1, 1)
+  (act_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+  (weight_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+  (bias_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+)
+key=f4, value=QLinear(
+  in_features=120, out_features=84, bias=True
+  (act_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+  (weight_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+)
+key=f5, value=QLinear(
+  in_features=84, out_features=10, bias=True
+  (act_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+  (weight_quant): FakeQuantize(
+    fake_quant_enabled=tensor([0], dtype=torch.uint8), observer_enabled=tensor([0], dtype=torch.uint8),            scale=tensor([1.]), zero_point=tensor([0])
+    (observer): MinMaxObserver(min_val=tensor([]), max_val=tensor([]))
+  )
+)
